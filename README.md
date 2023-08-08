@@ -22,3 +22,6 @@ tasks.test {
 
 ## Update configurations
 * Add all BrowserStack specific configurations in the `browserstack.yml` file
+
+## Known Limitations
+* Currently, the SDK setup with gradle only allows sequential execution on a single platform combination

@@ -6,10 +6,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import java.time.Duration
 
-class TestCase: BaseTest() {
+class BStackSearchTest: BaseTest() {
     override var caps: DesiredCapabilities? = Caps.AndroidBaseCapabilities()
     @Test
-    fun wikiAppTest() {
+    fun wikiAppTestBstack() {
 
         val searchElement = WebDriverWait(driver, Duration.ofSeconds(30)).until(
             ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Search Wikipedia"))

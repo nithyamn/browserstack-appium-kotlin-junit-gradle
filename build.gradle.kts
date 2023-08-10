@@ -25,6 +25,9 @@ tasks.test {
     useJUnitPlatform(){
         jvmArgs("-javaagent:${browserstackSDKArtifact?.file}")
     }
+    filter{
+        includeTestsMatching("*SearchTest")
+    }
 }
 
 tasks.withType<KotlinCompile> {

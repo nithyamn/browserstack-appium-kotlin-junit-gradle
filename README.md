@@ -24,4 +24,5 @@ tasks.test {
 * Add all BrowserStack specific configurations in the `browserstack.yml` file
 
 ## Known Limitations
-* Currently, the SDK setup with gradle only allows sequential execution on a single platform combination
+* Currently, the SDK setup with gradle only allows parallel execution on a single platform based on the no.of test cases
+* `m * n` parallelization is not supported yet
